@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Image, Location
 
+import requests
 
 def index(request):
     images = Image.objects.all()
